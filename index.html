@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Form Validation</h2>
+      <form>
+        <div class="form-group first">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="Enter your first name"
+            required
+          />
+          <i class="fa-regular fa-circle-check"></i>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="form-group last">
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Enter your last name"
+            required
+          />
+          <i class="fa-regular fa-circle-check"></i>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="form-group phone">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+            required
+          />
+          <i class="fa-regular fa-circle-check"></i>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="form-group email">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <i class="fa-regular fa-circle-check"></i>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+
+        <div class="form-group password">
+          <label for="Password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+          <i class="fa-regular fa-circle-check"></i>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <button id="btn" type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
